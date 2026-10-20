@@ -50,6 +50,18 @@
   // Copy that differs before and after the Chrome Web Store listing exists.
   document.documentElement.setAttribute('data-launch', launchUrl(config.chromeStoreUrl) ? 'live' : 'beta');
 
+  // Sections rise into place as they scroll into view. With reduced motion, or without
+  // IntersectionObserver, everything is simply visible.
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) document.documentElement.classList.add('no-reveal');
+  else {
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) { if (entry.isIntersecting) { entry.target.classList.add('in'); observer.unobserve(entry.target); } });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+    var items = document.querySelectorAll('.reveal');
+    for (var r = 0; r < items.length; r++) observer.observe(items[r]);
+  }
+
   // The small-screen menu closes once a link in it is chosen, so it doesn't cover the section it jumped to.
   var menu = document.querySelector('details.menu');
   if (menu) menu.addEventListener('click', function (event) {
