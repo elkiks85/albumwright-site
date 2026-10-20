@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="aw-title">
+  <title id="aw-title">Albumwright</title>
+  <defs>
+    <linearGradient id="aw-tile" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#24222d"/>
+      <stop offset="1" stop-color="#141319"/>
+    </linearGradient>
+    <clipPath id="aw-base"><rect x="0" y="0" width="64" height="51"/></clipPath>
+    <filter id="aw-glow" x="-60%" y="-120%" width="220%" height="340%"><feGaussianBlur stdDeviation="2.4"/></filter>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#aw-tile)"/>
+  <rect x=".75" y=".75" width="62.5" height="62.5" rx="13.25" fill="none" stroke="#433f50" stroke-width="1.5"/>
+  <path d="M14.6 55 L32 12.4 L49.4 55" fill="none" stroke="#ece8f2" stroke-width="7.8" stroke-linejoin="bevel" clip-path="url(#aw-base)"/>
+  <rect x="27.6" y="37.5" width="8.8" height="5.6" rx="1.4" fill="#f3b23c" opacity=".55" filter="url(#aw-glow)"/>
+  <rect x="27.6" y="37.5" width="8.8" height="5.6" rx="1.4" fill="#f3b23c"/>
+</svg>

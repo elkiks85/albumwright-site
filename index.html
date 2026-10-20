@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Albumwright — from a written brief to a finished album</title>
+<meta name="description" content="Albumwright is an AI album producer that runs in Chrome's side panel and makes whole albums on Suno, from a written brief to a finished, packaged album. Uses your own Suno account and your own ChatGPT or Claude plan.">
+<link rel="canonical" href="https://albumwright.com/">
+<meta name="theme-color" content="#121117">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Albumwright">
+<meta property="og:title" content="Albumwright — from a written brief to a finished album">
+<meta property="og:description" content="An AI album producer in Chrome's side panel. You write the brief and choose the singer; it plans, writes, sends each track to Suno and packages the album folder.">
+<meta property="og:url" content="https://albumwright.com/">
+<meta property="og:image" content="https://albumwright.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Albumwright: from a written brief to a finished album.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/barlow-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script src="assets/launch.js"></script>
+<script src="assets/site.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Albumwright home"><img src="assets/albumwright-logo.svg" alt="Albumwright" width="150" height="32"></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#library">Library</a>
+      <a href="#accounts">Your accounts</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="support.html">Support</a>
+    </nav>
+    <a class="btn btn-primary btn-sm head-cta" data-cta="store" href="mailto:support@albumwright.com?subject=Albumwright%20beta">Join the private beta</a>
+    <details class="menu">
+      <summary>Menu</summary>
+      <div class="menu-panel">
+        <a href="#how">How it works</a>
+        <a href="#library">Library</a>
+        <a href="#accounts">Your accounts</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="support.html">Support</a>
+        <a class="btn btn-primary" data-cta="store" href="mailto:support@albumwright.com?subject=Albumwright%20beta">Join the private beta</a>
+      </div>
+    </details>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="label">Album producer in Chrome's side panel &middot; Works with Suno</p>
+      <h1>From a written brief to a <strong>finished album</strong>.</h1>
+      <p class="lede">You write the brief and choose the singer. Albumwright plans the record, writes every track's lyrics and style prompt, sends each one to Suno and packages the album folder.</p>
+      <p class="fine">It runs on your own Suno account and your own ChatGPT or Claude plan.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" data-cta="store" href="mailto:support@albumwright.com?subject=Albumwright%20beta">Join the private beta</a>
+        <a class="btn btn-ghost" href="#how">See the four steps</a>
+      </div>
+      <p class="fine">Free: unlimited single songs and your first album. Needs Windows 10 or 11 and Google Chrome.
+        <span data-show="beta">Albumwright is in private beta; email us to ask for a place.</span>
+        <span data-show="live">Install it from the Chrome Web Store.</span></p>
+    </div>
+
+    <figure class="sheet" aria-labelledby="sheet-caption">
+      <div class="sheet-head">
+        <img src="assets/art/front-thumb.jpg" alt="" width="76" height="76">
+        <div>
+          <p class="label amber">Velvet Slipstream</p>
+          <p class="sheet-title">After the Last Exit</p>
+          <p class="mono">6 tracks &middot; 3 vocal &middot; 3 instrumental &middot; 160 credits estimated</p>
+        </div>
+      </div>
+      <div class="sheet-brief">
+        <p class="label">Brief</p>
+        <p>Create a 6-track cinematic synthwave album for a new artist. Begin in solitude, build toward euphoric energy, and resolve at dawn. Mix 3 vocal tracks with 3 instrumentals. Keep one singer across the vocal tracks.</p>
+      </div>
+      <div class="tracks-head" aria-hidden="true"><span>#</span><span>Track</span><span>Voice</span><span>BPM</span><span>Energy</span><span>Status</span></div>
+      <ol class="tracks">
+        <li data-state="done" style="--n:9;--i:0"><span class="no">01</span><span class="t">Black Glass Departure</span><span class="vox">Inst</span><span class="bpm">110</span><span class="meter" role="img" aria-label="Energy 47%"></span><span class="st"><span class="led"></span>In Suno</span></li>
+        <li data-state="done" style="--n:12;--i:1"><span class="no">02</span><span class="t">Your Hand on the Gearshift</span><span class="vox">Vocal</span><span class="bpm">114</span><span class="meter" role="img" aria-label="Energy 60%"></span><span class="st"><span class="led"></span>In Suno</span></li>
+        <li data-state="done" style="--n:15;--i:2"><span class="no">03</span><span class="t">Mirrors Hold the Threat</span><span class="vox">Inst</span><span class="bpm">118</span><span class="meter" role="img" aria-label="Energy 74%"></span><span class="st"><span class="led"></span>In Suno</span></li>
+        <li data-state="live" style="--n:17;--i:3"><span class="no">04</span><span class="t">The Room Takes the Wheel</span><span class="vox">Inst</span><span class="bpm">122</span><span class="meter" role="img" aria-label="Energy 87%"></span><span class="st"><span class="led"></span>Writing</span></li>
+        <li data-state="queued" style="--n:20;--i:4"><span class="no">05</span><span class="t">Nothing Between the Lights</span><span class="vox">Vocal</span><span class="bpm">126</span><span class="meter" role="img" aria-label="Energy 98%"></span><span class="st"><span class="led"></span>Queued</span></li>
+        <li data-state="queued" style="--n:13;--i:5"><span class="no">06</span><span class="t">Daylight on the Passenger Seat</span><span class="vox">Vocal</span><span class="bpm">116</span><span class="meter" role="img" aria-label="Energy 65%"></span><span class="st"><span class="led"></span>Queued</span></li>
+      </ol>
+      <div class="sheet-status">
+        <span class="vu" aria-hidden="true"></span>
+        <p>Track 3 is in Suno. Writing track 4 of 6.</p>
+        <span class="mono">Songs 3/6</span>
+      </div>
+      <figcaption id="sheet-caption">An album made with Albumwright, shown mid-run: the plan for <cite>After the Last Exit</cite> by Velvet Slipstream, with its energy arc rising from solitude to the peak of track 5 and settling at dawn.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="section" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="label">How it works</p>
+      <h2 id="how-title">Four steps, from brief to album folder.</h2>
+      <p>Albumwright sits in Chrome's side panel next to your signed-in Suno tab. You make the creative calls; it does the planning, writing, sending and packaging.</p>
+    </header>
+
+    <ol class="rail">
+      <li><a href="#step-brief"><b>Brief</b><span>Your idea becomes a plan and a credit estimate.</span></a></li>
+      <li><a href="#step-singer"><b>Singer</b><span>Auditions become one named private Suno Voice.</span></a></li>
+      <li><a href="#step-tracks"><b>Tracks</b><span>Lyrics and style prompts go to Suno, one by one.</span></a></li>
+      <li><a href="#step-deliver"><b>Deliver</b><span>Downloads and covers become the album folder.</span></a></li>
+    </ol>
+
+    <article class="step" id="step-brief" aria-labelledby="step-brief-title">
+      <div>
+        <p class="label">Step 1 of 4</p>
+        <h3 id="step-brief-title">Brief</h3>
+        <p class="step-lede">Describe the record you want, in your own words.</p>
+        <dl class="split">
+          <div><dt>You decide</dt><dd>The concept, genre and mood, the mix of vocal and instrumental tracks, and how many tracks.</dd></div>
+          <div><dt>Albumwright plans</dt><dd>The artist identity, the tracklist, and a mood and energy arc for every track.</dd><dd>A Suno credit estimate, shown before anything is spent.</dd></div>
+        </dl>
+      </div>
+      <figure class="panel-shot">
+        <div class="panel-bar"><img src="assets/albumwright-mark.svg" alt="" width="18" height="18">Albumwright</div>
+        <img class="screen" src="assets/screens/brief.png" alt="The Brief step in the Albumwright side panel, with an album description typed into the brief field and production options below it." width="1110" height="1500" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="step" id="step-singer" aria-labelledby="step-singer-title">
+      <div>
+        <p class="label">Step 2 of 4</p>
+        <h3 id="step-singer-title">Singer</h3>
+        <p class="step-lede">Audition voices before the album uses one.</p>
+        <dl class="split">
+          <div><dt>You decide</dt><dd>How many candidates to hear, from 2 to 6, and Any, Female or Male for each one.</dd><dd>The winner. Pick by ear, or let the AI choose from your brief.</dd></div>
+          <div><dt>Albumwright runs</dt><dd>The auditions. Every candidate sings the same lyrics over the same backing, so only the voice differs.</dd><dd>The setup. Your chosen sample becomes a named private Suno Voice for the album's vocal tracks.</dd></div>
+        </dl>
+      </div>
+      <figure class="panel-shot">
+        <div class="panel-bar"><img src="assets/albumwright-mark.svg" alt="" width="18" height="18">Albumwright</div>
+        <img class="screen" src="assets/screens/singers.png" alt="The Singer step, with two candidate singers described and a vocal gender chosen for each." width="1110" height="1500" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="step" id="step-tracks" aria-labelledby="step-tracks-title">
+      <div>
+        <p class="label">Step 3 of 4</p>
+        <h3 id="step-tracks-title">Tracks</h3>
+        <p class="step-lede">Every track is written and sent while the next one is being written.</p>
+        <dl class="split">
+          <div><dt>You decide</dt><dd>When it runs. Pause and resume any time.</dd><dd>Each track's performance, vocal or instrumental, until it's sent.</dd></div>
+          <div><dt>Albumwright writes</dt><dd>A style prompt and original lyrics for each track, then sends it to Suno as soon as it's written.</dd><dd>It keeps a record of what it sent, so it never sends a track twice.</dd></div>
+        </dl>
+      </div>
+      <figure class="panel-shot">
+        <div class="panel-bar"><img src="assets/albumwright-mark.svg" alt="" width="18" height="18">Albumwright</div>
+        <img class="screen" src="assets/screens/tracks.png" alt="The Tracks step, listing each planned track with its mood, energy and tempo, and the button that starts the album." width="1110" height="1500" loading="lazy">
+      </figure>
+    </article>
+
+    <article class="step" id="step-deliver" aria-labelledby="step-deliver-title">
+      <div>
+        <p class="label">Step 4 of 4</p>
+        <h3 id="step-deliver-title">Deliver</h3>
+        <p class="step-lede">The finished album, downloaded and packaged in one folder.</p>
+        <dl class="split">
+          <div><dt>You decide</dt><dd>MP3 or WAV.</dd><dd>Which version of each track goes into your playlists.</dd></div>
+          <div><dt>Albumwright packages</dt><dd>Every track, downloaded through Suno's own Studio export.</dd><dd>Lyrics, playlists, a tracklist, and front and back covers.</dd></div>
+        </dl>
+        <p class="step-note">If a download is interrupted, it continues by itself when you reopen the panel.</p>
+      </div>
+      <figure class="panel-shot">
+        <div class="panel-bar"><img src="assets/albumwright-mark.svg" alt="" width="18" height="18">Albumwright</div>
+        <img class="screen" src="assets/screens/deliver.png" alt="The Deliver step, with the download format, the button that downloads the album and creates covers, and playlist options." width="1110" height="1500" loading="lazy">
+      </figure>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="folder" aria-labelledby="folder-title">
+  <div class="wrap deliver-grid">
+    <div class="deliver-art">
+      <figure class="covers">
+        <div class="cover-stack">
+        <img src="assets/art/front.jpg" alt="Front cover of After the Last Exit by Velvet Slipstream: a dark car interior at sunset, with a city skyline through the window." width="960" height="960" loading="lazy">
+        <img src="assets/art/back.jpg" alt="Back cover of the same album, with the six-track tracklist set over the car's rear seat." width="960" height="960" loading="lazy">
+        </div>
+        <figcaption>Front and back covers from a finished Albumwright album, painted with ChatGPT's image generation.</figcaption>
+      </figure>
+    </div>
+    <div class="deliver-copy">
+      <p class="label">What you get</p>
+      <h2 id="folder-title">An album folder you can release from.</h2>
+      <ul>
+        <li>Every track in MP3 or WAV, both versions Suno made.</li>
+        <li>A lyrics file for each track.</li>
+        <li>A playlist for each version, to play the album in order.</li>
+        <li>A tracklist.</li>
+        <li>Front and back covers, painted by ChatGPT's image generation or set as a typographic cover designed by Claude.</li>
+      </ul>
+      <div class="folder" role="img" aria-label="Example album folder listing: audio files for each track and version, lyrics files, playlists, a tracklist, and front and back cover images.">
+        <div class="root">AFTER THE LAST EXIT/</div>
+        <ul>
+          <li class="k-audio">01 - Black Glass Departure - Version 1.mp3</li>
+          <li class="k-audio">01 - Black Glass Departure - Version 2.mp3</li>
+          <li>02 - Your Hand on the Gearshift - Lyrics.txt</li>
+          <li class="gap">&hellip; every track, both versions</li>
+          <li>Play album - Version 1 (MP3).m3u8</li>
+          <li>Play album - Version 2 (MP3).m3u8</li>
+          <li>tracklist.txt</li>
+          <li class="k-art">front-cover.png</li>
+          <li class="k-art">back-cover.png</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="library" aria-labelledby="library-title">
+  <div class="wrap">
+    <div class="library-grid">
+      <div>
+        <p class="label">Library</p>
+        <h2 id="library-title">Everything you've made, in one place.</h2>
+        <ul class="facts">
+          <li>Every album as a cover tile.</li>
+          <li>Your artists, and every song with its lyrics laid out by section.</li>
+          <li>Search and filters across albums, artists, tracks and lyrics.</li>
+          <li>Open it while albums generate or download.</li>
+        </ul>
+      </div>
+      <div class="shots">
+        <figure class="panel-shot">
+          <div class="panel-bar"><img src="assets/albumwright-mark.svg" alt="" width="18" height="18">Library</div>
+          <img class="screen" src="assets/screens/library.png" alt="The Library, showing three albums as cover tiles with search and filters above them." width="1110" height="1500" loading="lazy">
+        </figure>
+        <figure class="panel-shot">
+          <div class="panel-bar"><img src="assets/albumwright-mark.svg" alt="" width="18" height="18">Lyrics</div>
+          <img class="screen" src="assets/screens/lyrics.png" alt="A song's lyrics in the Library, laid out by section with performance notes beside each section name." width="1110" height="1500" loading="lazy">
+        </figure>
+      </div>
+    </div>
+    <div class="song-mode">
+      <p class="label amber">Song mode</p>
+      <p>One song, not a whole album? Give Albumwright a musical reference and it writes original lyrics and a style prompt.</p>
+      <p class="price-tag">Free, unlimited</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="accounts" aria-labelledby="accounts-title">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="label">Your accounts</p>
+      <h2 id="accounts-title">Your music runs through your accounts, not ours.</h2>
+      <p>Albumwright connects accounts you already have. You link each AI with that company's own sign-in.</p>
+    </header>
+    <div class="bay">
+      <div class="bay-head" aria-hidden="true"><span>On your computer</span><span>Connection</span><span>Service</span></div>
+      <div class="patch">
+        <div class="jack"><b>Google Chrome</b><span>Your signed-in Suno tab, with Albumwright in the side panel.</span></div>
+        <div class="cable"><span>your Suno sign-in</span></div>
+        <div class="jack"><b>Suno</b><span>Your Pro or Premier plan. Songs use your Suno credits.</span></div>
+      </div>
+      <div class="patch">
+        <div class="jack"><b>Albumwright helper</b><span>A small Windows app that runs the AI for Albumwright.</span></div>
+        <div class="cable"><span>that company's own sign-in</span></div>
+        <div class="jack"><b>ChatGPT through Codex, or Claude through Claude Code</b><span>OpenAI's or Anthropic's official program, on your own ChatGPT or Claude plan.</span></div>
+      </div>
+      <div class="patch licence">
+        <div class="jack"><b>Albumwright, Pro only</b><span>Checks your licence when you activate it and about once a week.</span></div>
+        <div class="cable"><span>licence key and an anonymous device label</span></div>
+        <div class="jack"><b>Lemon Squeezy</b><span>Our payment and licence provider.</span></div>
+      </div>
+    </div>
+    <ul class="promises">
+      <li><b>No Albumwright server in between.</b><span>Your music, prompts and lyrics go straight between your computer and Suno, OpenAI or Anthropic.</span></li>
+      <li><b>We never see your logins.</b><span>Not your Suno password, and not your ChatGPT or Claude sign-in. AI usage counts against your own plan.</span></li>
+      <li><b>Your work stays with you.</b><span>Briefs, lyrics and your library live in your Chrome profile and your album folders.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="requirements" aria-labelledby="req-title">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="label">Requirements</p>
+      <h2 id="req-title">What you need before you start.</h2>
+    </header>
+    <dl class="specs">
+      <div><dt>Computer</dt><dd><b>Windows 10 or 11, 64-bit</b><span>The Albumwright helper app runs on Windows.</span></dd></div>
+      <div><dt>Browser</dt><dd><b>Google Chrome</b><span>Albumwright runs in Chrome's side panel.</span></dd></div>
+      <div><dt>Suno</dt><dd><b>A Suno Pro or Premier plan</b><span>Suno only allows downloads and commercial use on paid plans. Albumwright downloads through Suno Studio's own export, under your plan's rules.</span></dd></div>
+      <div><dt>AI</dt><dd><b>A ChatGPT plan that includes Codex, or Claude Pro or Max</b><span>Albumwright uses whichever one you link.</span></dd></div>
+    </dl>
+    <p class="specs-note">Suno credits and AI usage are paid to Suno, OpenAI or Anthropic under your own plans, not to us.</p>
+  </div>
+</section>
+
+<section class="section" id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <header class="section-head">
+      <p class="label">Pricing</p>
+      <h2 id="pricing-title">Your first album is free.</h2>
+      <p>Single songs are free and unlimited. Pro adds unlimited albums.</p>
+    </header>
+    <div class="plans">
+      <div class="plan">
+        <h3>Free</h3>
+        <p class="price"><b>$0</b></p>
+        <p class="sub">No card needed.</p>
+        <ul>
+          <li>Unlimited single songs in Song mode</li>
+          <li>Your first album, from brief to finished folder</li>
+        </ul>
+        <div class="cta-row"><a class="btn btn-ghost" data-cta="store" href="mailto:support@albumwright.com?subject=Albumwright%20beta">Join the private beta</a></div>
+      </div>
+      <div class="plan pro">
+        <h3>Pro</h3>
+        <p class="price"><b>$12</b><small>per month</small><span class="or">or</span><b>$99</b><small>per year</small></p>
+        <p class="sub">Yearly works out at $8.25 a month.</p>
+        <ul>
+          <li>Unlimited albums</li>
+          <li>Each licence key works on up to 3 computers</li>
+          <li>14-day money-back guarantee, on your first payment and on renewals</li>
+          <li>Cancel any time; Pro keeps working to the end of the period you paid for</li>
+        </ul>
+        <div class="cta-row" data-cta-pair>
+          <a class="btn btn-primary" data-cta="monthly" href="mailto:support@albumwright.com?subject=Albumwright%20beta">Join the private beta</a>
+          <a class="btn btn-ghost" data-cta="yearly" href="mailto:support@albumwright.com?subject=Albumwright%20beta" hidden>Join the private beta</a>
+        </div>
+      </div>
+    </div>
+    <p class="pricing-note">Prices are in US dollars. Lemon Squeezy, our online reseller and Merchant of Record, takes the payment and handles sales tax and VAT. See the <a href="refunds.html">refund policy</a> and <a href="terms.html">terms</a>.</p>
+  </div>
+</section>
+
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <header class="section-head">
+      <p class="label">FAQ</p>
+      <h2 id="faq-title">Questions before you start.</h2>
+      <p>Anything else? Email <a href="mailto:support@albumwright.com">support@albumwright.com</a>.</p>
+    </header>
+    <div class="faq">
+      <details>
+        <summary>Do I need a paid Suno plan?</summary>
+        <div class="a"><p>Yes: Suno Pro or Premier. Suno only allows downloads and commercial use on paid plans. Albumwright downloads through Suno Studio's own export, so your plan's download rules apply.</p></div>
+      </details>
+      <details>
+        <summary>Who pays for Suno credits and AI usage?</summary>
+        <div class="a"><p>You do, through your own plans with Suno and with OpenAI or Anthropic. We never charge for them. Before anything is spent, the Brief step shows a Suno credit estimate for the whole album.</p></div>
+      </details>
+      <details>
+        <summary>Which AI does Albumwright use?</summary>
+        <div class="a"><p>The one you link: your ChatGPT plan through OpenAI's official Codex program, or your Claude Pro or Max plan through Anthropic's official Claude Code program. You sign in on that company's own page, and usage counts against your plan.</p></div>
+      </details>
+      <details>
+        <summary>Can Albumwright see my music, lyrics or logins?</summary>
+        <div class="a"><p>No. Your briefs, prompts, lyrics and library are stored in your Chrome profile and your album folders. They travel directly between your computer and Suno, OpenAI or Anthropic. We never see your passwords or AI logins. The <a href="privacy.html">privacy policy</a> lists the little we do receive.</p></div>
+      </details>
+      <details>
+        <summary>Who owns the songs I make?</summary>
+        <div class="a"><p>Albumwright claims no rights in what you make. Ownership and commercial use of the music, lyrics and artwork are governed by Suno's terms, and by OpenAI's or Anthropic's terms for the AI you use. Check them, and your plan, before you release anything.</p></div>
+      </details>
+      <details>
+        <summary>Does it work on a Mac?</summary>
+        <div class="a"><p>No. The Albumwright helper runs on Windows 10 or 11 (64-bit), with Google Chrome.</p></div>
+      </details>
+      <details>
+        <summary>What if I need to stop halfway through an album?</summary>
+        <div class="a"><p>Pause and resume whenever you like; Albumwright never sends a track twice. Keep Chrome and the side panel open while an album runs. If downloads are interrupted, they continue by themselves when you reopen the panel.</p></div>
+      </details>
+      <details>
+        <summary>How many computers can I use Pro on?</summary>
+        <div class="a"><p>Each Pro licence key works on up to 3 computers.</p></div>
+      </details>
+      <details>
+        <summary>Can I get a refund?</summary>
+        <div class="a"><p>Yes. Ask within 14 days of any Pro payment, including a renewal, and we refund it in full. The <a href="refunds.html">refund policy</a> explains how.</p></div>
+      </details>
+      <details>
+        <summary>What happens if Suno changes its website?</summary>
+        <div class="a"><p>Albumwright works inside Suno's website in your tab, so a change there can stop a feature working until we update it. When a step can't be completed safely, Albumwright pauses and tells you why instead of guessing. We make reasonable efforts to keep up with changes, but we can't guarantee compatibility.</p></div>
+      </details>
+      <details>
+        <summary>Is Albumwright made by Suno, OpenAI or Anthropic?</summary>
+        <div class="a"><p>No. Albumwright is an independent product of SynaptrixAI Ltd. It isn't affiliated with, endorsed by or sponsored by Suno, OpenAI or Anthropic.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section closing" aria-labelledby="closing-title">
+  <div class="wrap">
+    <div>
+      <h2 id="closing-title">Start with a paragraph. <strong>Finish with an album.</strong></h2>
+      <p data-show="beta">Albumwright is in private beta for Windows and Chrome. Email us and we'll reply with the next steps.</p>
+      <p data-show="live">Free to install. Your first album and unlimited single songs cost nothing.</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-primary" data-cta="store" href="mailto:support@albumwright.com?subject=Albumwright%20beta">Join the private beta</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="./"><img src="assets/albumwright-logo.svg" alt="Albumwright home" width="131" height="28"></a>
+      <ul class="foot-nav">
+        <li><a href="support.html">Support</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="refunds.html">Refunds</a></li>
+        <li><a href="mailto:support@albumwright.com">support@albumwright.com</a></li>
+      </ul>
+    </div>
+    <div class="foot-legal">
+      <p>Albumwright is a product of SynaptrixAI Ltd, registered in England and Wales, company number 17162325. Registered office: 128 City Road, London EC1V 2NX, United Kingdom. &copy; 2026 SynaptrixAI Ltd.</p>
+      <p>Suno is a trademark of Suno, Inc. ChatGPT and Codex are trademarks of OpenAI. Claude is a trademark of Anthropic. Albumwright is an independent product and is not affiliated with, endorsed by or sponsored by Suno, OpenAI or Anthropic.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
