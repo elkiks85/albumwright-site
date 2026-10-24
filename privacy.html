@@ -56,7 +56,7 @@
     <p class="label">Legal</p>
     <h1>Privacy policy</h1>
     <p class="lede">How SynaptrixAI Ltd handles personal data for Albumwright. Albumwright is built so that your music, prompts, lyrics and logins never reach us.</p>
-    <p class="effective">Effective date: 21 October 2026</p>
+    <p class="effective">Effective date: 24 October 2026</p>
   </div>
 </section>
 
@@ -86,9 +86,9 @@
         <ul>
           <li>Albumwright runs on your computer. Your briefs, prompts, lyrics, music, library and AI conversations stay in your Chrome profile and your album folders, and travel directly between you and Suno, OpenAI or Anthropic.</li>
           <li>We never receive your Suno account details or your ChatGPT or Claude logins.</li>
-          <li>If you buy Pro, Lemon Squeezy takes your payment and shares your order details with us. Albumwright checks your licence key with Lemon Squeezy when you activate it and about once a week.</li>
+          <li>If you buy Pro, Stripe processes your payment for us and we keep your subscription details. We never see your full card number.</li>
           <li>If you email us, we keep the conversation so we can help you.</li>
-          <li>If you create an Albumwright account, we keep your email address and when you signed in, on our own server in France. You can delete the account yourself at any time.</li>
+          <li>Starting an album needs an Albumwright account. We keep your email address, when you signed in, your plan and the random ID of your free album, on our own server in France. Albumwright sends that server the album's random ID when an album starts, never its title, brief or music. You can delete the account yourself at any time.</li>
           <li>This website uses no cookies and no analytics. The account pages at account.albumwright.com set one strictly necessary cookie when you sign in.</li>
         </ul>
       </div>
@@ -109,14 +109,14 @@
       <p>We also never receive your Suno password, your ChatGPT or Claude login, or the sign-in details those programs keep on your computer.</p>
 
       <h2 id="data-we-process">Personal data we process</h2>
-      <h3>Licence activation and checks (Pro only)</h3>
-      <p>When you activate Pro, Albumwright sends your licence key and an anonymous device label to Lemon Squeezy's licence service, and repeats the check about once a week. The device label lets your key count computers against the limit of three; it does not contain your name or email address. As with any internet request, Lemon Squeezy also receives your device's IP address. Through Lemon Squeezy we can see which licence keys are active and on how many devices.</p>
-      <p><strong>Why:</strong> to activate Pro, apply the three-computer limit and confirm your licence is valid. <strong>Legal basis:</strong> performance of our contract with you (Article 6(1)(b) UK GDPR and EU GDPR).</p>
+      <h3>Plan checks when an album starts</h3>
+      <p>When an album starts, Albumwright sends your session identifier and the album's random ID to account.albumwright.com, which answers with your plan. It never sends the album's title, brief, lyrics or music. On the Free plan, the first album ID is recorded as your free album, under a one-way hash of your email address (with a +tag and, for Gmail, dots removed). We keep that record after you delete your account, so that the free album can't be claimed again by opening a new account; it doesn't hold your email address in readable form. Albumwright also keeps a signed copy of your plan in your Chrome profile for up to 14 days, so it can keep working without a connection.</p>
+      <p><strong>Why:</strong> to provide the plan you are on and the one free album per person. <strong>Legal bases:</strong> performance of our contract with you (Article 6(1)(b) UK GDPR and EU GDPR), and our legitimate interest in preventing the free album from being claimed repeatedly (Article 6(1)(f)).</p>
 
       <h3>Purchases</h3>
-      <p>Lemon Squeezy is our online reseller and Merchant of Record. When you buy Pro, you buy it from Lemon Squeezy, which processes your payment details under its own privacy policy. Lemon Squeezy shares order details with us: your name, email address, country, order and subscription details (product, plan, price, dates, status and refunds), and your licence key and its activations. We never receive your full card number.</p>
+      <p>We sell Pro ourselves, and Stripe processes the payment for us. You enter your card details on Stripe's checkout page, and we never receive your full card number. Stripe gives us, and we keep: your email address, name and country, the billing address needed for tax, your subscription details (plan, price, dates, status, payments and refunds), and Stripe's identifiers for you and your subscription. Our account server stores your subscription's status and dates with your Albumwright account.</p>
       <p><strong>Why:</strong> to provide Pro, handle cancellations and refunds, answer questions about your order, prevent fraud and keep accounting records. <strong>Legal bases:</strong> performance of our contract with you (Article 6(1)(b)); compliance with our legal obligations for accounting and tax records (Article 6(1)(c)); and our legitimate interests in preventing fraud and in establishing or defending legal claims (Article 6(1)(f)).</p>
-      <p>We use your email address to contact you about your purchase and licence. We only send you marketing emails if you have agreed to receive them, and you can unsubscribe at any time.</p>
+      <p>We use your email address to contact you about your purchase and subscription. We only send you marketing emails if you have agreed to receive them, and you can unsubscribe at any time.</p>
 
       <h3>Support and private beta emails</h3>
       <p>When you email <a href="mailto:support@albumwright.com">support@albumwright.com</a>, including to ask for a place in the private beta, we receive your email address, your name if you include it, your message and any attachments.</p>
@@ -128,15 +128,15 @@
       <p><strong>Legal basis:</strong> our legitimate interests in running a secure website (Article 6(1)(f)).</p>
       <p>The &ldquo;Join the private beta&rdquo; buttons open your own email program. Nothing is sent to us until you send that email.</p>
 
-      <h3>Albumwright account (optional)</h3>
-      <p>You can create an Albumwright account at account.albumwright.com by asking for a sign-in link. There is no password. When you do, we process your email address, the times you asked for a link and signed in, the name of the computer if Albumwright sends one, and a random session identifier for each place you are signed in (stored as a one-way hash). The email address of each link request is also recorded together with the IP address it came from, for 24 hours after the link expires, so we can stop abuse. The sign-in email is sent from hello@albumwright.com through Agentboxd, the email platform we operate ourselves.</p>
+      <h3>Albumwright account</h3>
+      <p>Starting an album needs an Albumwright account. You sign in from Albumwright's Settings → Account or at account.albumwright.com by asking for a sign-in link; there is no password. When you do, we process your email address, the times you asked for a link and signed in, a label for the computer such as &ldquo;Chrome on Windows&rdquo;, and a random session identifier for each place you are signed in (stored as a one-way hash). Albumwright stays signed in on up to 3 computers; signing in on a fourth ends the session on the one used least recently. The email address of each link request is also recorded together with the IP address it came from, for 24 hours after the link expires, so we can stop abuse. The sign-in email is sent from hello@albumwright.com through Agentboxd, the email platform we operate ourselves.</p>
       <p>These pages set one cookie, <code>aw_session</code>, only when you sign in. It is strictly necessary to keep you signed in and holds nothing but the session identifier. The server keeps request logs (IP address, page requested, outcome and time, never your email address or the link) for 14 days for security.</p>
-      <p>An account currently holds no music and no plan information: Albumwright keeps working on your computer whether or not you have one. You can sign out, see where you are signed in, and delete the account from the account page; deleting it removes your email address and every session at once.</p>
-      <p><strong>Why:</strong> to sign you in without a password and to show you where you are signed in. <strong>Legal basis:</strong> performance of our contract with you (Article 6(1)(b)), and our legitimate interests in keeping the sign-in service secure (Article 6(1)(f)).</p>
+      <p>An account holds no music. It holds your plan: whether you have Pro, with its status and dates from Stripe, and the ID of your free album. You can sign out, see where you are signed in, and delete the account from the account page; deleting it removes your email address, your sessions and your subscription record at once (if you have Pro, cancel it first). The free album record described above stays.</p>
+      <p><strong>Why:</strong> to sign you in without a password, to provide your plan and to show you where you are signed in. <strong>Legal basis:</strong> performance of our contract with you (Article 6(1)(b)), and our legitimate interests in keeping the sign-in service secure (Article 6(1)(f)).</p>
 
       <h2 id="sharing">Who we share personal data with</h2>
       <ul>
-        <li><strong>Lemon Squeezy</strong>, our reseller, Merchant of Record and licence service. It acts as an independent controller for the payment and tax information it needs as the seller, and handles licence checks for us.</li>
+        <li><strong>Stripe</strong>, our payment provider, which processes payments, subscriptions, receipts and refunds for us. It also acts as an independent controller for its own fraud prevention and legal obligations, under its own privacy policy.</li>
         <li><strong>GitHub</strong>, which hosts this website.</li>
         <li><strong>Agentboxd</strong>, the email platform we operate ourselves, which sends sign-in links and holds our support mailbox.</li>
         <li><strong>Contabo GmbH</strong>, a German hosting company, which runs the server in France that holds Albumwright accounts, under a data processing agreement.</li>
@@ -147,15 +147,15 @@
       <p>We don't sell personal data, and we don't share it for advertising.</p>
 
       <h2 id="transfers">International transfers</h2>
-      <p>We are based in the United Kingdom. Albumwright accounts are held on a server in France, inside the European Economic Area. Lemon Squeezy and GitHub are based in the United States, and our providers may process data in other countries. When personal data is transferred outside the UK or the European Economic Area, we rely on an adequacy regulation or decision (such as the UK Extension to the EU&ndash;US Data Privacy Framework, where the recipient is certified) or on standard contractual clauses approved by the UK Information Commissioner or the European Commission. Email us for more information about these safeguards.</p>
+      <p>We are based in the United Kingdom. Albumwright accounts are held on a server in France, inside the European Economic Area. Stripe and GitHub are based in the United States, and our providers may process data in other countries. When personal data is transferred outside the UK or the European Economic Area, we rely on an adequacy regulation or decision (such as the UK Extension to the EU&ndash;US Data Privacy Framework, where the recipient is certified) or on standard contractual clauses approved by the UK Information Commissioner or the European Commission. Email us for more information about these safeguards.</p>
 
       <h2 id="retention">How long we keep it</h2>
       <div class="table-wrap">
         <table>
           <thead><tr><th scope="col">Information</th><th scope="col">How long</th></tr></thead>
           <tbody>
-            <tr><td>Order, subscription and licence records</td><td>While your licence is active, then six years from the end of the financial year of your last transaction, to meet accounting and tax rules and to deal with legal claims.</td></tr>
-            <tr><td>Licence key activations</td><td>Until the device is deactivated or the licence ends, then as part of the order records above.</td></tr>
+            <tr><td>Order and subscription records</td><td>While your subscription is active, then six years from the end of the financial year of your last transaction, to meet accounting and tax rules and to deal with legal claims.</td></tr>
+            <tr><td>Free album record</td><td>A one-way hash of your email address and the album's random ID, kept after your account is deleted so that each person has one free album. Ask us and we will remove it, and the free album with it.</td></tr>
             <tr><td>Support and private beta emails</td><td>Up to 24 months after our last exchange, unless we need them longer for an open issue or a legal claim.</td></tr>
             <tr><td>Website request logs</td><td>We hold none. GitHub keeps its own security logs under its privacy statement.</td></tr>
             <tr><td>Albumwright account</td><td>Until you delete it from the account page or ask us to. Sign-in links expire after 15 minutes; records of link requests are removed 24 hours after that; sessions end when you sign out or after 90 days. Daily backups of the account database are kept for 14 days. Account server request logs are kept for 14 days.</td></tr>
@@ -188,7 +188,7 @@
       <p>We protect the personal data we hold with appropriate technical and organisational measures, use reputable providers, and limit access to people who need it to do their work. No method of transmission or storage is completely secure. If a personal data breach occurs, we will notify you and the regulator where the law requires.</p>
 
       <h2 id="automated-decisions">Automated decisions</h2>
-      <p>We don't make decisions about you based solely on automated processing that have legal or similarly significant effects. The weekly licence check only confirms whether a licence key is valid.</p>
+      <p>We don't make decisions about you based solely on automated processing that have legal or similarly significant effects. The plan check when an album starts only confirms which plan your account is on.</p>
 
       <h2 id="changes">Changes to this policy</h2>
       <p>We will post any changes on this page with a new effective date. If a change significantly affects how we use your personal data, we will tell Pro customers by email before it takes effect.</p>
